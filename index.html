@@ -9,13 +9,27 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    div
+        <div class="jumbotron container ">
+            <h1 class="display-4">Simon dice!</h1>
+            <p class="lead">Para comenzar hacé click en el botón inicial</p>
+            <hr class="my-2">
+            <a class="btn btn-primary btn-block" id="botonIniciar" role="button">Iniciar</a>
+          </div>
+          <div class="container">
+            <div class="row row-cols-2">
+              <div class="col rounded-left border-right border-bottom color" id="azul"></div>
+              <div class="col rounded-right border-left border-bottom color" id="rojo"></div>
+              <div class="col rounded-left border-right border-top color" id="amarillo"></div>
+              <div class="col rounded-right border-left border-top color" id="verde"></div>
+            </div>
+          </div>
         
-        <script src="node_modules/jquery/dist/jquery.slim.min.js" async defer></script>
-        <script src="node_modules/popper.js/dist/popper.min.js" async defer></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" async defer></script>
+        <script src="node_modules/jquery/dist/jquery.slim.js" async defer></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" async defer></script>
+        <script src="index.js"></script>
     </body>
 </html>
