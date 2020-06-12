@@ -1,0 +1,22 @@
+.col{
+    width:300px;
+    height: 300px;
+    
+}
+
+#azul{
+    background-color: blue;
+    opacity: 0.5;
+}
+#verde{
+    background-color: green;
+    opacity: 0.5;
+}
+#rojo{
+    background-color: red;
+    opacity: 0.5;
+}
+#amarillo{
+    background-color: yellow;
+    opacity: 0.5;
+}
