@@ -6,7 +6,7 @@ botoninicio.onclick= iniciarJuego;
 
 function iniciarJuego(){
   reiniciarJuego();
-  manejarRonda();
+  setTimeout(manejarRonda,1000);
 };
 function manejarRonda(){
   disableInput();
@@ -92,5 +92,19 @@ manejarRonda();
 
 function perder(){
   disableInput();
+  actualizarEstadoPartida('perdio');
+  let reinicio= document.getElementById("botonReintentar");
+  reinicio.onclick=function(){actualizarEstadoPartida('reinicia')};
   reiniciarJuego();
+};
+
+function actualizarEstadoPartida(estado){
+if(estado==='perdio'){
+  document.getElementById("cajaError").classList.remove("ocultar");
+  document.getElementById("botonIniciar").classList.add("ocultar");
+}
+if(estado==='reinicia'){
+  document.getElementById("cajaError").classList.add("ocultar");
+  document.getElementById("botonIniciar").classList.remove("ocultar");
+}
 };
